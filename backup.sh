@@ -1,23 +1,23 @@
 #!/usr/bin/env sh
 # Script by GR6Y
 
-# Arquivos para backup
-backup_path="/root/server/worlds"
+# files to backup
+backup_path=""
 
-# Destino do backup
-backup_dir="/root/backup/arquivos"
+# backup destiny
+backup_dir=""
 
-# Formato do arquivo
-formato_data=$(date "+%d-%m-%y")
+# date format
+date_format=$(date "+%d-%m-%y")
 
 # Backup
-arquivo_final="Backup-$formato_data.tar.gz"
+final_archive="Backup-$formato_data.tar.gz"
 
 # log Backup
 log_backup="/root/backup/mserver-backup.log"
     $log_backup
 
 #############################
-# inicio do backup
+# starting backup
 #############################
 tar -czSpf "$backup_dir/$Arquivo_final" "$backup_path"
