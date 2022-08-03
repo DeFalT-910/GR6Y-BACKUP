@@ -14,7 +14,7 @@ date_format=$(date "+%d-%m-%y")
 final_archive="Backup-$formato_data.tar.gz"
 
 # log Backup
-log_backup="/root/backup/mserver-backup.log"
+log_backup="\root\backup\mserver-backup.log"
     $log_backup
 
 #############################
